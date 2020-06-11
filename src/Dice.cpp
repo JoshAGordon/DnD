@@ -17,5 +17,6 @@ uint_fast32_t Dice::roll()
 
 time_t Dice::_getSeed()
 {
-    return std::time(nullptr);
+    _seed_count++;
+    return std::time(nullptr) + _seed_count;
 }

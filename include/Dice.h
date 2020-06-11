@@ -11,7 +11,7 @@ private:
     std::uniform_int_distribution<rng_type::result_type> _udist;
     rng_type _rng; 
 
-    static uint_fast8_t const _seed_count = 0;
+    inline static uint_fast8_t _seed_count = 0;
 
     time_t _getSeed();
 
